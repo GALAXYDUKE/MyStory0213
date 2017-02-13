@@ -1,4 +1,4 @@
-package com.qf.story.view.utils;
+package com.qf.story.utils;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.qf.story.R;
-import com.qf.story.view.entity.NewStory;
+import com.qf.story.entity.NewStory;
 
 import java.util.List;
 

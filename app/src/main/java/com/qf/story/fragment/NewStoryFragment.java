@@ -1,4 +1,4 @@
-package com.qf.story.view.fragment;
+package com.qf.story.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.qf.story.R;
-import com.qf.story.view.entity.NewStory;
-import com.qf.story.view.utils.NewStoryAdapter;
+import com.qf.story.entity.NewStory;
+import com.qf.story.utils.NewStoryAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

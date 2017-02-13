@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/modifyBackground"
-    tools:context="com.qf.story.view.RegisterActivity">
+    tools:context=".view.RegisterActivity">
 
     <com.qf.story.view.MyActionBar
         android:layout_width="match_parent"

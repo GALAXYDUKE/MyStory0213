@@ -4,7 +4,7 @@
     android:id="@+id/activity_new_story"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.qf.story.view.NewStoryActivity">
+    tools:context=".view.NewStoryActivity">
 
     <com.qf.story.view.MyActionBar
         android:layout_width="match_parent"

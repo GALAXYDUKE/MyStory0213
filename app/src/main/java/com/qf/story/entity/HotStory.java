@@ -1,17 +1,16 @@
-package com.qf.story.view.entity;
+package com.qf.story.entity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 最新说说
+ * 最热说说
  * Created by Galaxy on 2017/2/12.
  */
 
-public class NewStory {
+public class HotStory {
     private String story_info,readCount,comment,story_time,city;//说说内容，点赞数，评论数，发表时间,发送城市
     private String sex,nickname,portrait;//用户的性别，昵称，头像
-    private List<String> pictureList = new ArrayList<>();//说说图片的集合
+    private List<String> pictureList;//说说图片的集合
 
     public List<String> getPictureList() {
         return pictureList;

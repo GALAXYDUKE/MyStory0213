@@ -15,11 +15,11 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.qf.story.R;
-import com.qf.story.view.entity.HotStory;
-import com.qf.story.view.entity.NewStory;
-import com.qf.story.view.fragment.HotStoryFragment;
-import com.qf.story.view.fragment.NewStoryFragment;
-import com.qf.story.view.utils.Util;
+import com.qf.story.entity.HotStory;
+import com.qf.story.entity.NewStory;
+import com.qf.story.fragment.HotStoryFragment;
+import com.qf.story.fragment.NewStoryFragment;
+import com.qf.story.utils.Util;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 

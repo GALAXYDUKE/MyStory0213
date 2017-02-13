@@ -5,7 +5,7 @@
     android:background="@color/modifyBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.qf.story.view.MainPageActivity">
+    tools:context=".view.MainPageActivity">
 
     <LinearLayout
         android:clickable="true"

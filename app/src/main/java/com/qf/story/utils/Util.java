@@ -1,4 +1,4 @@
-package com.qf.story.view.utils;
+package com.qf.story.utils;
 
 /**
  * 请求接口地址

@@ -1,4 +1,4 @@
-package com.qf.story.view.utils;
+package com.qf.story.utils;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.qf.story.R;
-import com.qf.story.view.entity.HotStory;
+import com.qf.story.entity.HotStory;
 
 import java.util.List;
 

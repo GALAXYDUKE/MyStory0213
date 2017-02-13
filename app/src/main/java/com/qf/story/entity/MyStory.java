@@ -1,4 +1,4 @@
-package com.qf.story.view.entity;
+package com.qf.story.entity;
 
 /**
  * 我的说说

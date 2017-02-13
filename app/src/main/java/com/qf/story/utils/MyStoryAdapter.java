@@ -1,4 +1,4 @@
-package com.qf.story.view.utils;
+package com.qf.story.utils;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.qf.story.R;
-import com.qf.story.view.entity.MyStory;
+import com.qf.story.entity.MyStory;
 
 import java.util.List;
 

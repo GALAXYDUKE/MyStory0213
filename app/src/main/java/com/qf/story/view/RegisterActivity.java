@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.qf.story.R;
-import com.qf.story.view.utils.Util;
+import com.qf.story.utils.Util;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 

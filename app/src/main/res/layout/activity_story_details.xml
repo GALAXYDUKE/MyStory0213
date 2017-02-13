@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/modifyBackground"
     android:layout_height="match_parent"
-    tools:context="com.qf.story.view.StoryDetailsActivity">
+    tools:context=".view.StoryDetailsActivity">
 
     <com.qf.story.view.MyActionBar
         android:layout_width="match_parent"

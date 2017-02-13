@@ -1,4 +1,4 @@
-package com.qf.story.view.fragment;
+package com.qf.story.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.qf.story.R;
-import com.qf.story.view.utils.HotStoryAdapter;
+import com.qf.story.utils.HotStoryAdapter;
 
 /**
  * 主页的最热说说显示碎片
