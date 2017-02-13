@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.story.view.MyStoryActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+        <com.qf.story.view.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myActionBar_myStory"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/myStoryLayout">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:id="@+id/myStoryLayout_top"
+                    android:background="@drawable/mine_bg">
+
+                    <EditText
+                        android:layout_marginStart="18sp"
+                        android:layout_width="200dp"
+                        android:layout_height="48dp"
+                        android:id="@+id/myStoryLayout_topEDT"
+                        android:textSize="18sp"
+                        android:cursorVisible="false"
+                        android:background="@null"
+                        android:textColor="@color/white"
+                        android:maxLines="1"
+                        android:maxWidth="200dp"
+                        android:maxLength="25"
+                        />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="120dp"
+                        android:layout_height="110dp"
+                        android:layout_margin="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/myStoryLayout_topLayout">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:id="@+id/myStoryPortraitImg"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/pc"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/icon_man"
+                                android:id="@+id/myStorySexImg"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"
+                                android:id="@+id/myStoryTEV"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:id="@+id/myStoryLayout_bottom">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/myStoryLayout_bottomImg"
+                        android:src="@drawable/icon_commend"/>
+
+                    <EditText
+                        android:layout_toRightOf="@id/myStoryLayout_bottomImg"
+                        android:layout_width="match_parent"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:background="@null"
+                        android:textColor="@color/modifyPasswordTEV"
+                        android:layout_height="match_parent" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerView" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

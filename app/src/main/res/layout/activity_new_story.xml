@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_story"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.story.view.NewStoryActivity">
+
+    <com.qf.story.view.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myActionBar_newStory"></com.qf.story.view.MyActionBar>
+
+    <LinearLayout
+        android:layout_below="@id/myActionBar_newStory"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/modifyPasswordTEV"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@null"
+                android:maxLines="4"
+                android:maxLength="100"
+                android:id="@+id/newStoryEDT"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="215dp">
+
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <com.qf.story.view.MyPhotoButton
+            android:layout_width="0dp"
+            android:id="@+id/myPhotoButton_left"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </com.qf.story.view.MyPhotoButton>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+
+        <com.qf.story.view.MyPhotoButton
+            android:layout_width="0dp"
+            android:id="@+id/myPhotoButton_right"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </com.qf.story.view.MyPhotoButton>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

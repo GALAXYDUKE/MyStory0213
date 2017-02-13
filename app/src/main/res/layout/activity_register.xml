@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/modifyBackground"
+    tools:context="com.qf.story.view.RegisterActivity">
+
+    <com.qf.story.view.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myActionBar_register"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/myActionBar_register"
+        android:id="@+id/registerLayout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/registerImg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/icon_portrait"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/registerLayout"
+        android:id="@+id/registerUsernameLayout"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/registerUsernameTEV"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/loginUsername_tev"
+            />
+
+        <EditText
+            android:layout_toRightOf="@+id/registerUsernameTEV"
+            android:id="@+id/registerUsernameEDT"
+            android:layout_width="300dp"
+            android:textColor="@color/black"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:background="@null"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/registerNicknameLayout"
+        android:layout_below="@+id/registerUsernameLayout"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/registerNicknameTEV"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/modifyNickname_tev"
+            />
+
+        <EditText
+            android:layout_toRightOf="@+id/registerNicknameTEV"
+            android:id="@+id/registerNicknameEDT"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@null"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/registerPasswordLayout"
+        android:layout_below="@+id/registerNicknameLayout"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/registerPasswordTEV"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/loginPassword_tev"
+            />
+
+        <EditText
+            android:layout_toRightOf="@+id/registerPasswordTEV"
+            android:id="@+id/registerPasswordEDT"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:inputType="numberPassword"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/registerPasswordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/registerButton1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:onClick="btnRegister1"
+        android:background="@drawable/bottm_bg"/>
+
+</RelativeLayout>

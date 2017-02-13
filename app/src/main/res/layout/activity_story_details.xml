@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_story_details"
+    android:layout_width="match_parent"
+    android:background="@color/modifyBackground"
+    android:layout_height="match_parent"
+    tools:context="com.qf.story.view.StoryDetailsActivity">
+
+    <com.qf.story.view.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myActionBar_storyDetails"></com.qf.story.view.MyActionBar>
+
+    <com.qf.story.view.MyItem
+        android:layout_below="@+id/myActionBar_storyDetails"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/myItem"></com.qf.story.view.MyItem>
+
+    <com.qf.story.view.MyTalk
+        android:layout_marginTop="8dp"
+        android:id="@+id/myTalk"
+        android:layout_below="@+id/myItem"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"></com.qf.story.view.MyTalk>
+
+    <com.qf.story.view.MyInputBox
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/myTalk"
+        android:id="@+id/myInputBox"></com.qf.story.view.MyInputBox>
+
+</RelativeLayout>

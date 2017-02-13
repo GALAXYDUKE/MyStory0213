@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:background="@color/modifyBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.story.view.MainPageActivity">
+
+    <LinearLayout
+        android:clickable="true"
+        android:longClickable="true"
+        android:orientation="vertical"
+        android:id="@+id/mainPageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:background="@color/myActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/myActionBar_mainPage">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_width="38dp"
+                android:layout_margin="12dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_log"
+                android:id="@+id/myActionBarImgLeft1"
+                />
+            <RadioGroup
+                android:layout_toRightOf="@+id/myActionBarImgLeft1"
+                android:layout_width="176dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/radioGroup"
+                android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnNew"
+                android:gravity="center"
+                android:checked="true"
+                android:button="@null"
+                android:background="@null"
+                android:text="@string/newStory"/>
+            <RadioButton
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnHot"
+                android:gravity="center"
+                android:button="@null"
+                android:text="@string/hotStory"
+                android:background="@null"/>
+            </RadioGroup>
+
+            <ImageView
+                android:src="@drawable/icon_edit"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="12dp"
+                android:id="@+id/myActionBarImgRight1"
+                android:layout_width="40dp"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainPageMenuLayout"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:layout_gravity="left">
+
+        <com.qf.story.view.MyMenuItem
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/myMenuItem1"/>
+        <com.qf.story.view.MyMenuItem
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@+id/myMenuItem1"
+            android:id="@+id/myMenuItem2"/>
+        <com.qf.story.view.MyMenuItem
+            android:clickable="true"
+            android:longClickable="true"
+            android:layout_below="@+id/myMenuItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/myMenuItem3"/>
+        <com.qf.story.view.MyMenuItem
+            android:longClickable="true"
+            android:layout_below="@+id/myMenuItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/myMenuItem4"/>
+        <com.qf.story.view.MyMenuItem
+            android:layout_below="@+id/myMenuItem4"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/myMenuItem5"/>
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:text="@string/back"
+            android:id="@+id/menuButton"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:background="@color/red"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

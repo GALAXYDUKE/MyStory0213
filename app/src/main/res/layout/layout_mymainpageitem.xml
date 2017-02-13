@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/MainPageTop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:id="@+id/portrait_mainPage"
+            />
+
+        <RelativeLayout
+        android:layout_toRightOf="@+id/portrait_mainPage"
+        android:id="@+id/mainPageTop_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+            <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:id="@+id/sex_mainPage"
+                />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/registerButton"
+            android:id="@+id/nickname_mainPage"
+            android:layout_toRightOf="@+id/sex_mainPage"/>
+            <TextView
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/time_mainPage"
+            android:layout_below="@id/sex_mainPage"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/place_mainPage"
+            android:textColor="@color/black"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/mainPageTEV"
+        android:textColor="@color/modifyPasswordTEV"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/mainPageImg"
+        android:layout_width="320dp"
+        android:layout_height="140dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/talk_mainPage"
+            android:src="@drawable/icon_talk"/>
+        <TextView
+            android:layout_toRightOf="@+id/talk_mainPage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="@string/counts"
+            android:textColor="@color/modifyPasswordTEV"
+            android:id="@+id/talk_mainPage_counts"/>
+        <ImageView
+            android:layout_toRightOf="@+id/talk_mainPage_counts"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/heart_mainPage"
+            android:src="@drawable/icon_heart"/>
+        <TextView
+            android:layout_toRightOf="@+id/heart_mainPage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="@string/counts"
+            android:textColor="@color/modifyPasswordTEV"
+            android:id="@+id/heart_mainPage_counts"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/share_mainPage"
+            android:src="@drawable/icon_share"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/modifyBackground"/>
+</LinearLayout>

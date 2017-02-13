@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_personal_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/modifyBackground"
+    tools:context="com.qf.story.view.PersonalCenterActivity">
+
+    <com.qf.story.view.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myActionBar_PC"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/myActionBar_PC"
+        android:id="@+id/PCLayout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/PCImg"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/pc"/>
+    </RelativeLayout>
+
+    <com.qf.story.view.MyViewGroup
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/PCLayout"
+        android:id="@+id/myViewGroup_PC1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.qf.story.view.MyViewGroup
+        android:layout_below="@id/myViewGroup_PC1"
+        android:id="@+id/myViewGroup_PC2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.qf.story.view.MyViewGroup
+        android:layout_below="@id/myViewGroup_PC2"
+        android:id="@+id/myViewGroup_PC3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.qf.story.view.MyViewGroup
+        android:layout_below="@id/myViewGroup_PC3"
+        android:id="@+id/myViewGroup_PC4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.qf.story.view.MyViewGroup
+        android:layout_below="@id/myViewGroup_PC4"
+        android:id="@+id/myViewGroup_PC5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/PCButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/myViewGroup_PC5"
+        android:layout_width="342dp"
+        android:layout_height="40dp"
+        android:text="@string/PCButton"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:onClick="btnModifyPassword"
+        android:background="@drawable/bottm_bg"/>
+
+
+</RelativeLayout>

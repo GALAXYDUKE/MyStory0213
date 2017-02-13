@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/time_myStory"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/myStoryTEV"
+        android:textColor="@color/modifyPasswordTEV"
+        android:textSize="15sp"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <ImageView
+        android:layout_below="@+id/myStoryTEV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/talk_myStory"
+            android:src="@drawable/icon_talk"/>
+        <TextView
+            android:layout_toRightOf="@+id/talk_myStory"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:text="@string/counts"
+            android:textColor="@color/modifyPasswordTEV"
+            android:id="@+id/talk_myStory_counts"/>
+        <ImageView
+            android:layout_toRightOf="@+id/talk_myStory_counts"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/heart_myStory"
+            android:src="@drawable/icon_heart"/>
+        <TextView
+            android:layout_toRightOf="@+id/heart_myStory"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:text="@string/counts"
+            android:textColor="@color/modifyPasswordTEV"
+            android:id="@+id/heart_myStory_counts"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/share_myStory"
+            android:src="@drawable/icon_share"/>
+
+    </RelativeLayout>
+</LinearLayout>

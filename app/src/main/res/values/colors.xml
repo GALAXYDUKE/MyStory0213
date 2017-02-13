@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="modifyBackground">#E7E7E7</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="registerButton">#3263A3</color>
+    <color name="myActionBar">#3263A3</color>
+    <color name="loginTEV">#A9A9A9</color>
+    <color name="gray">#ccc</color>
+    <color name="blue">#004FAE</color>
+    <color name="PCTextColor">#898989</color>
+    <color name="modifyPasswordTEV">#3b3b3b</color>
+    <color name="skyBlue">#52D6FC</color>
+    <color name="red">#E92222</color>
+</resources>

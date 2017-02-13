@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_modify_sex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/modifyBackground"
+    tools:context="com.qf.story.view.ModifySexActivity">
+
+    <com.qf.story.view.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myActionBar_sex"/>
+
+    <com.qf.story.view.MyViewGroup
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/myActionBar_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myViewGroup_sex1"/>
+    <com.qf.story.view.MyViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myViewGroup_sex2"
+        android:layout_below="@+id/myViewGroup_sex1"/>
+
+</RelativeLayout>

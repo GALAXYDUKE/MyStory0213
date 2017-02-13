@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:background="@color/modifyBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.story.view.LoginActivity">
+
+    <com.qf.story.view.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myActionBar_login"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/myActionBar_login"
+        android:id="@+id/storyLayout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/loginImg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/icon_login"/>
+        <TextView
+            android:id="@+id/loginTEV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/loginTEV"
+            android:text="@string/login_tev"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/storyLayout"
+        android:id="@+id/usernameLayout"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="66dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/loginUsernameTEV"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/loginUsername_tev"
+            />
+
+        <EditText
+            android:layout_toRightOf="@+id/loginUsernameTEV"
+            android:id="@+id/loginUsernameEDT"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@null"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/passwordLayout"
+        android:layout_below="@+id/usernameLayout"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/loginPasswordTEV"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/loginPassword_tev"
+            />
+
+        <EditText
+            android:layout_toRightOf="@+id/loginPasswordTEV"
+            android:id="@+id/loginPasswordEDT"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:inputType="numberPassword"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/loginButton"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:onClick="btnLogin"
+        android:background="@drawable/bottm_bg"/>
+
+    <Button
+        android:layout_below="@+id/loginButton"
+        android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:textColor="@color/registerButton"
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerButton"
+        android:onClick="btnRegister"/>
+
+</RelativeLayout>

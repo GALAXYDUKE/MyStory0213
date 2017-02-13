@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_face"
+            android:id="@+id/inputBoxImg_left"/>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/inputBoxImg_left"
+            android:id="@+id/inputBox_middle"
+            android:layout_width="230dp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape"
+            android:layout_height="50dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:background="@null"
+                android:ellipsize="start"
+                android:textColor="@color/black"
+                android:textColorHint="@color/blue"
+                android:hint="@string/hint_storyDetails"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_send"
+            android:id="@+id/inputBoxImg_right"/>
+
+    </RelativeLayout>
+</LinearLayout>

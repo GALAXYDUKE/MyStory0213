@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:background="@color/white"
+    android:layout_height="40dp"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/myViewGroupTEV1"
+        android:layout_width="70dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/modifyPasswordTEV"/>
+    <ImageView
+        android:id="@+id/myViewGroupImg1"
+        android:layout_toRightOf="@id/myViewGroupTEV1"
+        android:layout_width="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="180dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/myViewGroupImg1"
+        android:layout_height="match_parent"
+        android:textColor="@color/PCTextColor"
+        android:id="@+id/myViewGroupTEV2"/>
+    <ImageView
+        android:layout_toRightOf="@+id/myViewGroupTEV2"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/myViewGroupImg2"
+        android:layout_width="30dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+</RelativeLayout>
